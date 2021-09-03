@@ -1,0 +1,11 @@
+add_newline = false
+
+[character]
+success_symbol = "[➜](bold green)"
+
+
+[kubernetes]
+format = 'on [⛵ $context \($namespace\)](dimmed green) '
+disabled = false
+
+
