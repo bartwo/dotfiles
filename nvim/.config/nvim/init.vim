@@ -9,7 +9,7 @@ set relativenumber
 set number
 
 " persistant undo
-set undodir=/tmp/.vim/undodir
+set undodir=~/.cache/vim/undodir
 set undofile
 
 " Better searching
