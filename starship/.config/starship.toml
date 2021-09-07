@@ -3,11 +3,15 @@ add_newline = false
 [character]
 success_symbol = "[➜](bold green)"
 error_symbol = "[✖](bold red)"
-vicmd_symbol = "[V](bold green) "
+#vicmd_symbol = "[](bold green) "
 
 
 [kubernetes]
-format = 'on [⛵ $context \($namespace\)](dimmed green) '
 disabled = false
 
+[git_metrics]
+disabled = false
+
+[git_status]
+up_to_date = "✓"
 
