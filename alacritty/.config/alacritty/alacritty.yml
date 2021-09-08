@@ -1,7 +1,12 @@
 env:
   TERM: xterm-256color
   #TERM: alacritty-256color
-#window
+window:
+    decorations: buttonless
+    padding:
+      x: 9
+      y: 9
+
 #window:
 #    decorations: none
 # Colors (Gruvbox dark)
@@ -70,11 +75,8 @@ key_bindings:
     - { key: Minus, mods: Control, action: DecreaseFontSize }
     - { key: F11, action: ToggleFullscreen  }
 
-padding:
-    x: 4
-    y: 4
 
-background_opacity: 0.8
+background_opacity: 0.85
 dynamic_title: false
 
 url:
