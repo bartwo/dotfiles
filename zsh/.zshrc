@@ -33,9 +33,6 @@ bindkey -v
 export KEYTIMEOUT=1
 bindkey -M viins 'jk' vi-cmd-mode
 
-# crtl-l for autosuggest-accept
-bindkey '^l' autosuggest-accept
-
 # Load in plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
