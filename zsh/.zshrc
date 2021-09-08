@@ -33,6 +33,10 @@ bindkey -v
 export KEYTIMEOUT=1
 bindkey -M viins 'jk' vi-cmd-mode
 
+# massive hack to get command-Period working
+autoload -U insert-last-word
+bindkey ≥ insert-last-word
+
 # Load in plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

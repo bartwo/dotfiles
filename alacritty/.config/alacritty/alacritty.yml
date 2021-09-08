@@ -74,6 +74,7 @@ key_bindings:
     - { key: Plus, mods: Control, action: IncreaseFontSize }
     - { key: Minus, mods: Control, action: DecreaseFontSize }
     - { key: F11, action: ToggleFullscreen  }
+    - { key: Period, mods: Command , chars: ≥  }
 
 
 background_opacity: 0.85
