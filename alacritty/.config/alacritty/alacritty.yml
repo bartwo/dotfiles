@@ -1,83 +1,83 @@
+---
+
 env:
   TERM: xterm-256color
-  #TERM: alacritty-256color
 window:
-    decorations: buttonless
-    padding:
-      x: 9
-      y: 9
+  dynamic_padding: true
+  decorations: full
+  padding:
+    x: 9
+    y: 9
+    opacity: 0.95
 
-#window:
-#    decorations: none
 # Colors (Gruvbox dark)
 colors:
-    # Default colors
-    primary:
-      # hard contrast: background = '#1d2021'
-      background: '#282828'
-      # soft contrast: background = '#32302f'
-      foreground: '#ebdbb2'
+  # Default colors
+  primary:
+    # hard contrast: background = '#1d2021'
+    background: '#282828'
+    # soft contrast: background = '#32302f'
+    foreground: '#ebdbb2'
 
     # Normal colors
-    normal:
-      black:   '#282828'
-      red:     '#cc241d'
-      green:   '#98971a'
-      yellow:  '#d79921'
-      blue:    '#458588'
-      magenta: '#b16286'
-      cyan:    '#689d6a'
-      white:   '#a89984'
+  normal:
+    black:   '#282828'
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
 
     # Bright colors
-    bright:
-      black:   '#928374'
-      red:     '#fb4934'
-      green:   '#b8bb26'
-      yellow:  '#fabd2f'
-      blue:    '#83a598'
-      magenta: '#d3869b'
-      cyan:    '#8ec07c'
-      white:   '#ebdbb2'
+  bright:
+    black:   '#928374'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#ebdbb2'
 
 # Font configuration (changes require restart)
 font:
-    # The normal (roman) font face to use.
-    normal:
-      family: MesloLGL Nerd Font
-      # Style can be specified to pick a specific face.
-      style: Regular
+  # The normal (roman) font face to use.
+  normal:
+    family: MesloLGL Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Regular
 
     # The bold font face
-    bold:
-      family: MesloLGL Nerd Font
-      # Style can be specified to pick a specific face.
-      style: Bold
+  bold:
+    family: MesloLGL Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Bold
 
-    # The italic font face
-    italic:
-      family: MesloLGL Nerd Font
-      # Style can be specified to pick a specific face.
-      style: Italic
+  # The italic font face
+  italic:
+    family: MesloLGL Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Italic
 
 selection:
-    semantic_escape_chars: ',│`|:"'' ()[]{}<>'
-    save_to_clipboard: true
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
 
 live_config_reload: true
 
 key_bindings:
-    - { key: V, mods: Control|Shift, action: Paste }
-    - { key: C, mods: Control|Shift, action: Copy }
-    - { key: Key0, mods: Control, action: ResetFontSize }
-    - { key: Equals, mods: Control, action: IncreaseFontSize }
-    - { key: Plus, mods: Control, action: IncreaseFontSize }
-    - { key: Minus, mods: Control, action: DecreaseFontSize }
-    - { key: F11, action: ToggleFullscreen  }
-    - { key: Period, mods: Command , chars: ≥  }
+  - {key: V, mods: Control|Shift, action: Paste}
+  - {key: C, mods: Control|Shift, action: Copy}
+  - {key: Key0, mods: Control, action: ResetFontSize}
+  - {key: Equals, mods: Control, action: IncreaseFontSize}
+  - {key: Plus, mods: Control, action: IncreaseFontSize}
+  - {key: Minus, mods: Control, action: DecreaseFontSize}
+  - {key: F11, action: ToggleFullscreen}
+  - {key: Period, mods: Command, chars: "!$"}
 
 
-background_opacity: 0.85
 dynamic_title: false
 
 url:
@@ -85,4 +85,4 @@ url:
     #
     # This program is executed when clicking on a text which is recognized as a URL.
     # The URL is always added to the command as the last parameter.
-    launcher: open
+  launcher: open
