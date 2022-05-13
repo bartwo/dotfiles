@@ -43,3 +43,16 @@ bindkey '!$' insert-last-word
 # Load in plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+# jk to escape
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
+
+# >>>> Vagrant command completion (start)
+fpath=(/opt/vagrant/embedded/gems/2.2.19/gems/vagrant-2.2.19/contrib/zsh/ $fpath)
+compinit
+# <<<<  Vagrant command completion (end)
+
+if [[ -f "~/.secret" ]]; then
+  source ~/.secret
+fi
