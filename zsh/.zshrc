@@ -22,6 +22,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
 
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
+autoload -Uz compinit && compinit
+
 # vi mode
 
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
@@ -35,7 +38,7 @@ bindkey -M viins 'jk' vi-cmd-mode
 
 # massive hack to get command-Period working
 autoload -U insert-last-word
-bindkey ≥ insert-last-word
+bindkey '!$' insert-last-word
 
 # Load in plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
